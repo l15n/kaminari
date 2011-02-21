@@ -6,3 +6,4 @@ en:
       previous: "&laquo; Prev"
       next: "Next &raquo;"
       truncate: "..."
+      page: "page"

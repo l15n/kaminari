@@ -47,7 +47,7 @@ module Kaminari
       end
 
       def page_url_for(page)
-        @template.url_for @template.params.merge(:page => (page <= 1 ? nil : page))
+        @template.url_for @template.params.merge(Kaminari.page_param => (page <= 1 ? nil : page))
       end
     end
 
@@ -97,7 +97,7 @@ module Kaminari
       %w[current_page first_page_link last_page_link page_link].each do |tag|
         eval <<-DEF
           def #{tag}_tag
-            @last = #{tag.classify}.new @template, :page => @page
+            @last = #{tag.classify}.new @template, Kaminari.page_param => @page
           end
         DEF
       end
