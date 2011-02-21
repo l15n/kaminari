@@ -37,7 +37,7 @@ module Kaminari
       end
     end
 
-    # The main class that controlls the whole process
+    # The main class that controls the whole process
     class PaginationRenderer
       def initialize(template, options) #:nodoc:
         @window_options = {}.tap do |h|

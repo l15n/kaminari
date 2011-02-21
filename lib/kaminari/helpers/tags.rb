@@ -6,7 +6,7 @@ module Kaminari
     #
     # The template file should be placed in your app/views/kaminari/ directory
     # with underscored class name (besides the "Tag" class. Tag is an abstract
-    # class, so _tag parital is not needed).
+    # class, so _tag partial is not needed).
     #   e.g.)  PrevLink  ->  app/views/kaminari/_prev_link.html.erb
     #
     # If the template file does not exist, it falls back to ancestor classes.
